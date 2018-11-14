@@ -275,13 +275,16 @@ Acknowledgments
 [2]: http://php.net/manual/en/install.pecl.phpize.php
 
 
- 1001  ls
- 1002  git clone https://github.com/allegro/php-protobuf.git
- 1003  cd php-protobuf/
- 1004  ls
- 1005  /opt/appnode/appnode-php72/root/usr/bin/phpize
- 1006  yum install appnode-php72-php-devel
- 1007  /opt/appnode/appnode-php72/root/usr/bin/phpize
- 1008  ./configure --with-php-config=/opt/appnode/appnode-php72/root/usr/bin/php-config
- 1009  make
- 1010  make install
+cd /usr/local/src
+git clone https://github.com/allegro/php-protobuf.git
+cd php-protobuf/
+/opt/appnode/appnode-php72/root/usr/bin/phpize
+yum install appnode-php72-php-devel
+/opt/appnode/appnode-php72/root/usr/bin/phpize
+./configure --with-php-config=/opt/appnode/appnode-php72/root/usr/bin/php-config
+make
+
+make install
+
+
+
